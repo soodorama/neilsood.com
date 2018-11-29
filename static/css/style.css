@@ -1,7 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -37,7 +37,6 @@ li {
     .header>a>img {
         height: 100px;
         position: absolute;
-        left:-1px;
     }
 
     .header img#navbar {
@@ -47,16 +46,28 @@ li {
         height: 50px;
         cursor: pointer;
     }
-/* 
-    .header ul {
-        display: inline-block;
-        vertical-align: top;
-        font-size: 20px;
+
+    .header .dropdown {
+        /* display:none; */
+        background-color: rgb(34,34,34);
+        z-index: 1;
         position: absolute;
-        top: 35px;
-        right:0px;
-        
-    } */
+        top:100px;
+        width:100%;
+        text-align: center;
+        border-top: 1px solid rgb(54,54,54);
+        border-bottom: 1px solid rgb(54,54,54);
+    }
+
+    .header .dropdown a {
+        font-size: 20px;
+        color:white;
+        text-decoration: none;
+        display: block;
+        height: 50px;
+        padding-top: 20px;
+        border: 1px solid rgb(54,54,54);
+    }
 
 .content {
     width: 100%;
@@ -81,7 +92,7 @@ li {
         font-weight: 200;
         position: absolute;
         left: 30px;
-        top: 42px;
+        top: 40px;
     }
 
     .footer ul {
