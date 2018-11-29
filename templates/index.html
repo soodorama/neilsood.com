@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Neil Sood</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/favicon_white.png') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="/"><img src="{{ url_for('static', filename='img/bitmoji_cropped.png') }}" alt="neil-sood-bitmoji"></a>
+            <img id="navbar" src="{{ url_for('static', filename='img/navbar_30_white.png') }}" alt="navbar-menu">
+            <!-- <ul id="main-nav">
+                <li>about</li>
+                <li>projects</li>
+                <li>contact</li>
+            </ul> -->
+        </div>
+        <div class="content">
+
+        </div>
+        <div class="footer">
+            <h5>&copy; {{ year }} Neil Sood</h5>
+            <ul id="links">
+                <li><a href="mailto:soodorama@gmail.com?Subject=Hey%20Neil%21" target="_top"><img src="{{ url_for('static', filename='img/logo_email_red.png') }}" alt="logo-email"></a></li>
+                <li><a href="https://github.com/soodorama" target="_blank"><img src="{{ url_for('static', filename='img/logo_github_green_white.png') }}" alt="logo-github"></a></li>
+                <li><a href="https://www.linkedin.com/in/nsood/" target="_blank"><img src="{{ url_for('static', filename='img/logo_linkedin_white.png') }}" alt="logo-linkedin"></a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
