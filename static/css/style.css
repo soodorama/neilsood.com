@@ -47,8 +47,8 @@ li {
         cursor: pointer;
     }
 
-    .header .dropdown {
-        /* display:none; */
+    .header #dropdown {
+        display:none;
         background-color: rgb(34,34,34);
         z-index: 1;
         position: absolute;
@@ -59,7 +59,7 @@ li {
         border-bottom: 1px solid rgb(54,54,54);
     }
 
-    .header .dropdown a {
+    .header #dropdown a {
         font-size: 20px;
         color:white;
         text-decoration: none;
@@ -72,8 +72,8 @@ li {
 .content {
     width: 100%;
     position: absolute;
-    top:0px;
-    bottom:0px;
+    top:100px;
+    bottom:100px;
 }
 
 
