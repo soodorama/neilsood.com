@@ -2,9 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About me</title>
+    <title>About Me</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/favicon_white.png') }}">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="header">
+            <a href="/"><img src="{{ url_for('static', filename='img/bitmoji_logo_new_good.png') }}" alt="neil-sood-bitmoji"></a>
+            <img id="navbar" src="{{ url_for('static', filename='img/navbar_30_white.png') }}" alt="navbar-menu">
+            <div id="dropdown">
+                <a href="/about">about</a>
+                <a href="/projects">projects</a>
+                <a href="/contact">contact</a>
+            </div>
+        </div>
+        <div class="content">
+            <!-- TODO -->
+        </div>
+        <div class="footer">
+            <h5>&copy; {{ year }} Neil Sood</h5>
+            <ul id="links">
+                <li><a href="mailto:soodorama@gmail.com?Subject=Hey%20Neil%21" target="_top"><img src="{{ url_for('static', filename='img/logo_email_red.png') }}" alt="logo-email"></a></li>
+                <li><a href="https://github.com/soodorama" target="_blank"><img src="{{ url_for('static', filename='img/logo_github_green_white.png') }}" alt="logo-github"></a></li>
+                <li><a href="https://www.linkedin.com/in/nsood/" target="_blank"><img src="{{ url_for('static', filename='img/logo_linkedin_white.png') }}" alt="logo-linkedin"></a></li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>

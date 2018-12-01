@@ -57,6 +57,7 @@ li {
         text-align: center;
         border-top: 1px solid rgb(54,54,54);
         border-bottom: 1px solid rgb(54,54,54);
+        /* transition: opacity .8s ease-in-out; */
     }
 
     .header #dropdown a {
@@ -76,6 +77,15 @@ li {
     bottom:100px;
 }
 
+    .content #myChart {
+        /* position:absolute;
+        top:50px;
+        left:50px;
+        right:50px;
+        bottom:50px; */
+        /* width: 100%; */
+        /* height:100%; */
+    }
 
 .footer {
     width: 100%;
