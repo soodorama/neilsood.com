@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $("#navbar").click(function() {
-        $("#dropdown").slideToggle("slow", function() {
+        $("#dropdown").slideToggle("fast", function() {
             // animation complete
         });
     })
