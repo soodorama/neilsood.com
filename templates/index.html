@@ -14,12 +14,6 @@
         <div class="header">
             <a href="/"><img src="{{ url_for('static', filename='img/bitmoji_logo_new_good.png') }}" alt="neil-sood-bitmoji"></a>
             <a class="header-text" href="/"><h2>Hi, I'm Neil</h2></a>
-            <!-- <img id="navbar" src="{{ url_for('static', filename='img/navbar_30_white.png') }}" alt="navbar-menu">
-            <div id="dropdown">
-                <a href="/about">about</a>
-                <a href="/projects">projects</a>
-                <a href="/contact">contact</a>
-            </div> -->
         </div>
         <div class="content">
             <div class="intro">
@@ -32,7 +26,14 @@
 
             </div>
             <div class="contact">
-                
+                <h3>Get in touch!</h3>
+                <p>Happy to talk to any fellow developers!</p>
+                <form action="/contact_form" method="POST">
+                    <input type="text" name="name" id="name" placeholder="Name" required>
+                    <input type="text" name="email" id="email" placeholder="Email" required>
+                    <textarea name="message" id="message" id="message" placeholder="Message" cols="30" rows="10" required></textarea>
+
+                </form>
             </div>
         </div>
         <div class="footer">

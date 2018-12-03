@@ -20,6 +20,14 @@ def projects():
 def contact():
     return render_template('contact.html', year=year)
 
+@app.route('/contact_form', methods=["POST"])
+def contact_submitted():
+    return redirect('/submitted')
+
+@app.route('/submitted')
+def submitted():
+    return render_template('submitted.html', year=year)
+
 if __name__ == "__main__":
     app.run(debug=True)
 
